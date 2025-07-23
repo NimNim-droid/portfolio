@@ -1,0 +1,135 @@
+.home {
+  width: 100%;
+  height: 90vh;
+background: linear-gradient(90deg, #333,#000, #000);
+  margin-top: 110px;
+  z-index: 2;
+
+  
+}
+.home-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 35px;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+   gap: 15px;
+}
+.home-img {
+  width: 90%;
+  border-radius: 15px;
+  padding: 5px;
+  overflow: hidden;
+}
+.home-img img {
+  width: 550px;
+  border-radius: 50%;
+  
+}
+
+.about {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 35px;
+    gap: 10em;
+    background: black;
+    
+}
+.about-img img{
+    position: relative;
+    width: 400px;
+    box-shadow: 0 0 25px rgb(241, 248, 50);
+    border-radius: 20%;
+}
+
+.about-content h2{
+  text-align: left;
+  color: white;
+  font-size: 42px;
+}
+
+.about-content h3{
+  font-size: 60px;
+  color: white;
+}
+.about-content p{
+  color: white;
+  font-size: 20px;
+  margin: 2em 0 3em
+}
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #FEBA17;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #0077b5; 
+}
+/* PRE MINRO TEXT */
+.title, .subtitle, .description {
+  color: #edefef;
+}
+.title {
+  font-size: 62px;
+  line-height: 1.2;
+}
+.subtitle {
+  font-size: clamp(19px, 3vw, 34px);
+}
+
+@media (max-width: 1024px) {
+  .home-content, .about {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .home-img img, .about-img img {
+    width: 300px;
+  }
+
+  .about-content h2 {
+    font-size: 32px;
+  }
+
+  .about-content h3 {
+    font-size: 44px;
+  }
+
+  .about-content p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-img img, .about-img img {
+    width: 250px;
+  }
+
+  .about-content h2 {
+    font-size: 26px;
+  }
+
+  .about-content h3 {
+    font-size: 36px;
+  }
+
+  .about-content p {
+    font-size: 16px;
+  }
+}
